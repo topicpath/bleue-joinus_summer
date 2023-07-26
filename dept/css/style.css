@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+/* reset
+============================================================================================================ */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, p, blockquote, th, td, main, figure {
+	margin: 0;
+	padding: 0;
+}
+table {
+	font-size: 100%;
+	font-family: inherit;
+}
+fieldset, img {
+	border: 0;
+}
+img {
+	vertical-align: middle;
+}
+address, caption, cite, code, dfn, em, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+caption, th {
+	text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+q:before, q:after {
+	content: '';
+}
+abbr, acronym {
+	border: 0;
+}
+select, input, textarea {
+	font-size: 100%;
+}
+header,footer,nav,main,section,article,figure,aside {
+	display: block;
+}
+
+
+/*
+============================================================================================================ */
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	color: #000;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+
+	font-family: "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.3rem;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+#container {
+	position: relative;
+	max-width: 750px;
+	margin: auto;
+}
+
+footer .info {
+	padding: 25px 0 5px;
+	font-size: 1.2rem;
+	line-height: 1.7;
+	text-align: center;
+}
+footer .info dt {
+	margin-bottom: 15px;
+}
+footer small {
+	display: block;
+	margin-top: 20px;
+	padding: 5px 0;
+	border-top: 1px solid;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+
+
+/* #contents
+------------------------------------------*/
+#contents {
+	margin-bottom: 30px;
+	padding-top: 30px;
+	background: #fbe6ef url(../img/contents_bg.png);
+	background-size: 100%;
+}
+#contents div .title {
+	margin-right: auto;
+	margin-left: auto;
+}
+#contents div .lead {
+	margin-top: 15px;
+	margin-bottom: 25px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: center;
+}
+
+
+/* DRINKS & SWEETS , NO SPICE */
+.drinks,
+.no {
+	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.drinks .title,
+.no .title {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/* DRINKS & SWEETS */
+.drinks {
+	background: #d5ebe6 url(../img/bg.png);
+	background-size: 100%;
+}
+.drinks .title {
+	width: 236px;
+}
+
+
+/* NO SPICE */
+.no {
+	background-color: #fffcdb;
+}
+.no .title {
+	width: 187px;
+}
+
+
+/* section */
+#contents section {
+	position: relative;
+	max-width: 700px;
+	width: 93.334%;
+	margin: 0 auto;
+	padding: 20px 4% 10px;
+	background-color: #fff;
+}
+#contents section + section {
+	padding-top: 35px;
+}
+
+#contents section .img {
+	position: relative;
+	overflow: hidden;
+}
+#contents section .img .frame {
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+
+#contents section .copy {
+	position: absolute;
+	top: -10px;
+	left: 11%;
+	z-index: 2;
+}
+#contents section .copy.right {
+	right: 11%;
+	left: auto;
+}
+#contents section + section .copy {
+	top: 5px;
+}
+
+#contents section .limit {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 4px 6px 3px;
+	background-color: #f4b3c2;
+	color: #fff;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+#contents section .w100 {
+	width: 100%;
+}
+
+@media (min-width: 769px) {
+	#contents section .sp {
+		display: none !important;
+	}
+}
+@media (max-width: 768px) {
+	#contents section .pc {
+		display: none !important;
+	}
+}
+
+#contents section .menu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #c0192a;
+	color: #c0192a;
+	font-size: 1.8rem;
+	letter-spacing: -.05em;
+}
+#contents .drinks section .menu {
+	border-bottom-color: #007580;
+	color: #007580;
+}
+#contents .drinks .no_02 .menu {
+	border-bottom-color: #007580;
+	color: #007580;
+}
+#contents section .menu span {
+	font-size: 1.5rem;
+}
+#contents section .menu h1 {
+	line-height: 1.3;
+}
+#contents section .menu h1 span {
+	margin-left: 3px;
+}
+#contents section .menu .price {
+	margin-left: auto;
+	font-weight: bold;
+}
+#contents section .menu .price span {
+	margin-right: 5px;
+}
+
+#contents section .description {
+	font-size: 1.2rem;
+}
+
+#contents section .shop {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 5px;
+	font-size: 1.7rem;
+	font-family: "fot-tsukuardgothic-std", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+#contents section .shop .name {
+	margin-right: 10px;
+	padding-bottom: 2px;
+}
+#contents section .shop .floor {
+	margin-left: 5px;
+	padding: 0 3px;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	font-size: 1.3rem;
+}
+
+#contents section .tel {
+	padding-left: 17px;
+	background: url(../img/ico_tel.png) no-repeat left center;
+	background-size: 12px;
+}
+#contents section .tel a {
+	text-decoration: none;
+	color: #000;
+	font-family: "fot-tsukuardgothic-std", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	font-style: normal;
+}
+#contents section .floor + .tel {
+	margin-left: 5px;
+}
+
+#contents section .attention {
+	margin-top: 5px;
+	font-size: 1.2rem;
+}
+
+
+
+/* .notes
+------------------------------------------*/
+.notes {
+	max-width: 640px;
+	width: 85.334%;
+	margin: 25px auto 0;
+	padding: 10px 15px;
+	border: 1px solid;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+.notes li {
+	position: relative;
+	padding-left: 1.1em;
+}
+.notes li span {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
